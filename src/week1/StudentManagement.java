@@ -6,7 +6,8 @@ public class StudentManagement {
 
     public boolean sameGroup(Student s1, Student s2) {
         // TODO:
-        return false; // xóa dòng này sau khi cài đặt
+		if(s1.group == s2.group) return true;		
+        else return false; // xóa dòng này sau khi cài đặt
     }
 
     void studentsByGroup() {
