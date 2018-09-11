@@ -37,7 +37,7 @@ public class Student {
      */
     Student() {
         // TODO:
-		this.name = "Stuent";
+		this.name = "Student";
 		this.sid = "000";
 		this.group = "INT22041";
 		this.email = "uet@vnu.edu.vn";
@@ -70,7 +70,7 @@ public class Student {
     }
 
     void getInfo() {
-        // TOD
+        
 		System.out.println(this.getName());
 		System.out.println(this.getSid());
 		System.out.println(this.getGroup());
