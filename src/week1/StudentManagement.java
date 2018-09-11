@@ -15,7 +15,7 @@ public class StudentManagement {
     }
 
     void removeStudent(String id) {
-        // TODO:
+        // TOD
     }
 
     public static void main(String[] args) {
