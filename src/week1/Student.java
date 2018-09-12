@@ -69,13 +69,10 @@ public class Student {
 		this.group = s.group;
     }
 
-    void getInfo() {
-        
-		System.out.println(this.getName());
-		System.out.println(this.getSid());
-		System.out.println(this.getGroup());
-		System.out.println(this.getEmail());	
-        
+    String getInfo() {
+        // TODO
+		return "Ho ten: "+	this.getName() + "\nMa sinh vien: "+this.getSid()
+		+"\nLop: " +this.getGroup()+"\nEmail: "+this.getEmail();       
     }
 
 }
