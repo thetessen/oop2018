@@ -63,10 +63,10 @@ public class Student {
      */
     Student(Student s) {
         // TODO:
-		this.name = s.name;
-		this.sid = s.sid;
-		this.email = s.email;
-		this.group = s.group;
+		this.name = s.getName;
+		this.sid = s.getSid;
+		this.email = s.getEmail;
+		this.group = s.getGroup;
     }
 
     String getInfo() {
