@@ -4,8 +4,8 @@ import java.util.HashSet;
 public class StudentManagement {
 
     // TODO khai báo thuộc tính students là array chứa các đối tượng thuộc lớp Student (max. 100)
-	public   ArrayList<Student> sv = new ArrayList<Student>(100);
-    public static boolean sameGroup(Student s1, Student s2) {
+    public   ArrayList<Student> sv = new ArrayList<Student>(100);
+    public  boolean sameGroup(Student s1, Student s2) {
         // TODO:
 		if(s1.getGroup().equals(s2.getGroup())) return true;	
         else return false; 
@@ -36,7 +36,7 @@ public class StudentManagement {
 
     public static void main(String[] args) {
         // TODO:
-		Student nvThe = new Student("Nguyen Van The","17021038","thesondong@gmail.com");
+	Student nvThe = new Student("Nguyen Van The","17021038","thesondong@gmail.com");
     	nvThe.setGroup("INT22045");
     	System.out.println("Ten sinh vien: "+nvThe.getName());
     	nvThe.getInfo();
