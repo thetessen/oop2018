@@ -63,17 +63,18 @@ public class Student {
      */
     Student(Student s) {
         // TODO:
-		this.name = s.getName;
-		this.sid = s.getSid;
-		this.email = s.getEmail;
-		this.group = s.getGroup;
+		this.name = s.getName();
+		this.sid = s.getSid();
+		this.email = s.getEmail();
+		this.group = s.getGroup();
     }
 
     void getInfo() {
         // TODO
+
 		System.out.println( "Ho ten: "+	this.getName() + "\nMa sinh vien: "+this.getSid()
 		+"\nLop: " +this.getGroup()+"\nEmail: "+this.getEmail()); 
-        
+       
     }
 
 }
