@@ -44,7 +44,7 @@ public class StudentManagement {
     	Student s2 = new Student();
     	Student s3 = new Student(s1);
     	s3.setGroup("INT22042");  	
-    	main1 sinhvien = new main1();
+    	StudentManagement sinhvien = new StudentManagement();
     	sinhvien.sv.add(s1);
     	sinhvien.sv.add(s2);
     	sinhvien.sv.add(s3);    	
