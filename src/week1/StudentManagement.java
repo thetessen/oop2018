@@ -34,10 +34,13 @@ public class StudentManagement {
         		break;
         	}
         }
-        for(int i=index ; i<count-1 ; i++) {
-    		sv[i]=sv[i+1];
-    	}
-        sv[count-1]=null;  
+        if(index!=0) {
+        	for(int i=index ; i<count-1 ; i++) {
+        		sv[i]=sv[i+1];
+        	}
+            sv[count-1]=null;
+        }
+          
    }
 
     public static void main(String[] args) {
