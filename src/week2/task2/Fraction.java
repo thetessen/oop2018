@@ -82,6 +82,14 @@ public class Fraction {
 	    	toiGian();
 	        return this;
     }
+	 public boolean equals(Fraction obj) {
+    	toiGian();
+    	obj.toiGian();
+    	if(this.getNumerator()==obj.getNumerator() && this.getDenominator()==obj.getDenominator())
+    		return true;
+    	return false;
+    	
+    }
 	public static void main(String[] args) {
 		 Phanso a = new Phanso(7,2);
 		 Phanso b = new Phanso(-4,5);
@@ -92,5 +100,8 @@ public class Fraction {
 	   	 System.out.println(b.subtract(e));
 	     System.out.println(c.multiply(e));
 	     System.out.println(d.divide(e));
+		 if(a.equals(b))
+    		System.out.println("yes");
+    		else System.out.println("no");
 		}
 }
