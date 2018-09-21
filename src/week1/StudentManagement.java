@@ -13,12 +13,10 @@ public class StudentManagement {
         int count=0;
         while(sv[++count] != null);	
 		for(int i=0 ; i<count ; i++)	h.add(sv[i].getGroup());
-    	String[] arr = new String[h.size()];
-    	h.toArray(arr);
-    	for(int i=0 ; i < arr.length ; i++) {
-    		System.out.println("Lop "+arr[i]+" :");
-    		for(int j=0;j<count;j++){
-    			if(sv[j].getGroup().equals(arr[i]))
+    	for(String ha:h) {
+    		System.out.println("Lop "+ ha +" :");
+    		for(int j=0 ; j<count ; j++){
+    			if(sv[j].getGroup().equals(ha))
     				System.out.println(sv[j].getName());
     		}
     	}
