@@ -91,17 +91,17 @@ public class Fraction {
     	
     }
 	public static void main(String[] args) {
-		 Phanso a = new Phanso(7,2);
-		 Phanso b = new Phanso(-4,5);
-		 Phanso c = new Phanso(-3,2);
-		 Phanso d = new Phanso(5,8);
-		 Phanso e = new Phanso(7,11);
+		 Fraction a = new  Fraction(7,2);
+		 Fraction b = new  Fraction(-4,5);
+		 Fraction c = new Fraction(-3,2);
+		 Fraction d = new  Fraction(5,8);
+		 Fraction e = new  Fraction(7,11);
 		 System.out.println(a.add(e));
 	   	 System.out.println(b.subtract(e));
-	     System.out.println(c.multiply(e));
-	     System.out.println(d.divide(e));
+	    	 System.out.println(c.multiply(e));
+	    	 System.out.println(d.divide(e));
 		 if(a.equals(b))
-    		System.out.println("yes");
+    		 	System.out.println("yes");
     		else System.out.println("no");
 		}
 }
