@@ -24,7 +24,7 @@ public class StudentManagement {
 
     void removeStudent(String id) {
         // TODO   
-    	int count=0, index=0;
+    	int count=0, index=-1;
         while(sv[++count] != null);	
         for(int i=0 ; i<count ; i++) {
         	if(sv[i].getSid().equals(id)) {
@@ -32,7 +32,7 @@ public class StudentManagement {
         		break;
         	}
         }
-        if(index!=0) {
+        if(index!=-1) {
         	for(int i=index ; i<count-1 ; i++) {
         		sv[i]=sv[i+1];
         	}
