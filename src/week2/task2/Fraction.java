@@ -23,7 +23,7 @@ public class Fraction {
 	}
 
 	public String toString() {
-		if(this.denominator == 0) return "khong the chia cho 0";
+		if(this.denominator == 0) return "Mẫu số không thể bằng 0";
 		else if(this.denominator == 1) return this.numerator+"";
 		else if(this.denominator == -1) return (-this.numerator)+"";
 		else if(this.denominator < 0 &&this.denominator != -1)
@@ -54,17 +54,17 @@ public class Fraction {
     public Fraction add(Fraction other) {
         // TODO: Phương thức cộng hai phân số (this và other), trả về đối tượng Fraction mới
     this.setNumerator(this.getNumerator() * other.getDenominator() + this.getDenominator() * other.getNumerator());
-	    	this.setDenominator(this.getDenominator() * other.getDenominator()) ;
-	    	toiGian();
-	        return  this;
+    	this.setDenominator(this.getDenominator() * other.getDenominator()) ;
+    	toiGian();
+        return  this; 
     }
 
     public Fraction subtract(Fraction other) {
         // TODO: Phương thức trừ hai phân số (this và other), trả về đối tượng Fraction mới
         this.setNumerator(this.getNumerator() * other.getDenominator() - this.getDenominator() * other.getNumerator());
-	    	this.setDenominator(this.getDenominator() * other.getDenominator()) ;
-	    	toiGian();
-	        return this;
+    	this.setDenominator(this.getDenominator() * other.getDenominator()) ;
+    	toiGian();
+        return  this; 
     }
 
     public Fraction multiply(Fraction other) {
@@ -83,25 +83,30 @@ public class Fraction {
 	        return this;
     }
 	 public boolean equals(Fraction obj) {
-    	toiGian();
-    	obj.toiGian();
-    	if(this.getNumerator()==obj.getNumerator() && this.getDenominator()==obj.getDenominator())
-    		return true;
-    	return false;
+    	if(this.getDenominator()==0 || obj.getDenominator()==0) {
+    		 System.out.println("Mẫu số không thể bằng 0, xin kiểm tra lại");
+    	} 		
+    	else {
+    		toiGian();
+        	obj.toiGian();
+        	if(this.getNumerator()==obj.getNumerator() && this.getDenominator()==obj.getDenominator())
+        		return true;
+    	}
+		return false;
     	
     }
 	public static void main(String[] args) {
 		 Fraction a = new  Fraction(7,2);
-		 Fraction b = new  Fraction(-4,5);
+		 Fraction b = new  Fraction(-4,11);
 		 Fraction c = new Fraction(-3,2);
 		 Fraction d = new  Fraction(5,8);
 		 Fraction e = new  Fraction(7,11);
 		 System.out.println(a.add(e));
 	   	 System.out.println(b.subtract(e));
-	    	 System.out.println(c.multiply(e));
-	    	 System.out.println(d.divide(e));
+	     System.out.println(c.multiply(e));
+	     System.out.println(d.divide(e));
 		 if(a.equals(b))
-    		 	System.out.println("yes");
-    		else System.out.println("no");
-		}
+    		 	System.out.println("Hai phân số bằng nhau");
+    		else System.out.println("Hai phân số không bằng nhau");
+	}
 }
