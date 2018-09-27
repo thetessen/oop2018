@@ -83,13 +83,13 @@ public class Fraction {
 	        return this;
     }
 	 public boolean equals(Fraction obj) {
-    	if(this.getDenominator()==0 || obj.getDenominator()==0) {
+    	if(this.getDenominator()==0 || ((Fraction) obj).getDenominator()==0) {
     		 System.out.println("Mẫu số không thể bằng 0, xin kiểm tra lại");
     	} 		
     	else {
     		toiGian();
-        	obj.toiGian();
-        	if(this.getNumerator()==obj.getNumerator() && this.getDenominator()==obj.getDenominator())
+        	((Fraction) obj).toiGian();
+        	if(this.getNumerator()==((Fraction) obj).getNumerator() && this.getDenominator()==((Fraction) obj).getDenominator())
         		return true;
     	}
 		return false;
