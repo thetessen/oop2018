@@ -82,7 +82,7 @@ public class Fraction {
 	    	toiGian();
 	        return this;
     }
-	 public boolean equals(Fraction obj) {
+	 public boolean equals(Object obj) {
     	if(this.getDenominator()==0 || ((Fraction) obj).getDenominator()==0) {
     		 System.out.println("Mẫu số không thể bằng 0, xin kiểm tra lại");
     	} 		
