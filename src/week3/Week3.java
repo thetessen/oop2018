@@ -1,5 +1,6 @@
 package week3;
-
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
 public class Week3 {
 
     public static int max(int m, int n) {
@@ -10,7 +11,7 @@ public class Week3 {
 
     public static int minOfArray(int[] array) {
         // TODO: Tìm giá trị nhỏ nhất của của một mảng số nguyên (kích thước mảng <= 100 phần tử)
-    	int min=array[0];
+        int min=array[0];
     	for(int i=1;i<array.length;i++) {
     		if(array[i] < min)	min = array[i];
     	}
@@ -25,10 +26,11 @@ public class Week3 {
      */
     public static String calculateBMI(double weight, double height) {
         // TODO: Viết chương trình tính chỉ số BMI và in ra kết quả đánh giá
-    	double bmi = weight/(height*height);
+        double bmi = weight/(height*height);
     	if(bmi < 18.5)	return "Thiếu cân";
     		else if(bmi < 22.99) return "Bình thường";
     			else if(bmi < 24.99) return "Thừa cân";
     				else  return "Béo phì";
     }
 }
+
