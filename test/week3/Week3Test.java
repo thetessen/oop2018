@@ -1,5 +1,6 @@
 package week3;
-
+import org.junit.Test;
+import static org.junit.Assert.*;
 public class Week3Test {
 
     // TODO: Viết 5 testcase cho phương thức max()
