@@ -1,6 +1,4 @@
 package week3;
-import static org.junit.jupiter.api.Assertions.*;
-import org.junit.jupiter.api.Test;
 public class Week3 {
 
     public static int max(int m, int n) {
