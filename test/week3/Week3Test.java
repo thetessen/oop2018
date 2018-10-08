@@ -2,7 +2,6 @@ package week3;
 
 import org.junit.Test;
 import static org.junit.Assert.*;
-
 public class Week3Test {
 
     // TODO: Viết 5 testcase cho phương thức max()
@@ -19,7 +18,7 @@ public class Week3Test {
     // TODO: Viết 5 testcase cho phương thức minOfArray()
 	void testminOfArray() {
 		Week3 ts2 = new Week3();	
-		int[] a1= {};
+		int[] a1= {-4};
 		int[] a2= {5,6,3,-1,2,9};
 		int[] a3= {6,3,7,4,-8,9,10};
 		int[] a4= {-1,13,9,-4,8,-66,7};
