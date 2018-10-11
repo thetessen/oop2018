@@ -5,10 +5,10 @@ package week4.task1;
  *
  * @author THE TESSEN
  */
-public class CamSanh extends Cam{
-    private int soluong;
+public class CamThanhPhong extends Cam{
+	private int soluong;
     private int giavon;
-	public CamSanh(String nguon, int gia, double nhietdobaoquan, double thoigianbaoquan, int soluong, int giavon) {
+	public CamThanhPhong(String nguon, int gia, double nhietdobaoquan, double thoigianbaoquan, int soluong, int giavon) {
 		super(nguon, gia, nhietdobaoquan, thoigianbaoquan);
 		this.soluong = soluong;
 		this.giavon = giavon;
@@ -29,12 +29,12 @@ public class CamSanh extends Cam{
 	public int tienNhap() {
 		return this.soluong*this.giavon;
 	}
-	//Tiền lãi khi bán n kg cam sành
+	//Tiền lãi khi bán n kg cam Thanh Phong
 	public int Lai(int n) {
 		return n*(getGia()-this.giavon);
 	}
 	public static void main(String[] args) {
-		CamSanh camsanh= new CamSanh("Hà Giang",35000,27,9,100,30000);
-		CamSanh camsanh1= new CamSanh("Tuyên Quang",33000,27,9,90,27000);
-	}	
+		CamThanhPhong camtp= new CamThanhPhong("Hà Giang",20000,26,9,100,16000);
+		CamThanhPhong camtp1= new CamThanhPhong("Tuyên Quang",19000,27,9,90,15000);
+	}
 }
