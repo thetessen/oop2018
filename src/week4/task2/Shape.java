@@ -30,5 +30,11 @@ public class Shape {
 	public String toString() {
 		return "Shape [color=" + color + ", filled=" + filled + "]";
 	}
+	public static void main(String[] args) {
+		Shape shape1 = new Shape();
+		Shape shape2 = new Shape("blue",false);
+		System.out.println(shape1);
+		System.out.println(shape2);
+	}
     
 }

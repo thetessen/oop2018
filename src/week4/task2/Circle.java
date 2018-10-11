@@ -34,5 +34,11 @@ public class Circle extends Shape{
 				+ ", Perimeter=" + getPerimeter() +", Color="
 						+ getColor() + ", isFilled=" + isFilled() + "]";
 	}
+	public static void main(String[] args) {
+		Circle circle1 = new Circle();
+		Circle circle2 = new Circle(2.00,"green",true);
+		System.out.println(circle1);
+		System.out.println(circle2);
+	}
   
 }

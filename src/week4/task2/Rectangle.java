@@ -52,5 +52,12 @@ public class Rectangle extends Shape{
 				+ getColor() + ", isFilled=" + isFilled() + "]";
 	}
 
-	
+	public static void main(String[] args) {
+		Rectangle  rectangle1 = new  Rectangle();
+		Rectangle  rectangle2 = new  Rectangle(5.00,2.50);
+		Rectangle  rectangle3 = new  Rectangle(3.00,2.00,"green",true);
+		System.out.println(rectangle1);
+		System.out.println( rectangle2);
+		System.out.println( rectangle3);
+	}
 }
