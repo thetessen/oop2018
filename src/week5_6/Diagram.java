@@ -5,27 +5,41 @@
  */
 package week5_6;
 
+import java.util.ArrayList;
+
 
 /**
  *
  * @author THE TESSEN
  */
 public class Diagram {
-    Layer layer = new Layer();
+    ArrayList<Layer> l = new ArrayList<Layer>();
 
+    public Diagram() {
+        Layer l1= new Layer();
+        Layer l2= new Layer();
+        Layer l3= new Layer();
+        l.add(l1);
+        l.add(l2);
+        l.add(l3);
+    }
+    
+    
     public void deleteCircle(){
-        for(int i= layer.s.size()-1;i>=0;--i){
-            if(layer.s.get(i) instanceof Circle){
-               layer.s.remove(i);
-            }
-            
+         for(Layer la: l){
+             for(int i = la.s.size()-1;i>=0;--i)
+                 if(la.s.get(i) instanceof Circle)
+                     la.s.remove(i);
             
         }
     }
+
     @Override
     public String toString() {
-        return "Diagram{" + "layer=" + layer + '}';
+        return "Diagram{" + "l=" + l + '}';
     }
+    
+    
 
     public static void main(String[] args) {
         Diagram d = new Diagram();
