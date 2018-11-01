@@ -27,10 +27,10 @@ public class Addition extends BinaryExpression{
     public String toString() {
         return "("+left+" + " +right+") = "+ evaluate();
     }
-    public static void main(String[] args) {
-        Addition a = new Addition(new Numeral(8) , new Numeral(6));
-        Square b= new Square(a);
-        b.evaluate();
-        System.out.println(b.toString());
-    }
+//    public static void main(String[] args) {
+//        Addition a = new Addition(new Numeral(8) , new Numeral(6));
+//        Square b= new Square(a);
+//        b.evaluate();
+//        System.out.println(b.toString());
+//    }
 }
