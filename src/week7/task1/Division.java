@@ -17,7 +17,7 @@ public class Division extends BinaryExpression{
         return left;
     }
 
-    @Override
+    @Override 
     public Expression right() {
         return this.right;
     }

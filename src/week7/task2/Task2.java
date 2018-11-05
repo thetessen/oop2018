@@ -25,14 +25,14 @@ public class Task2 {
         Object t = new Integer (13);
         System.out.println ((float) t);
     }
-    public void io() throws IOException {
+    public void io() throws IOException  {
         File f = new File("J:\\txt");
-           if (!f.isFile()) {
+            if (!f.isFile()) {
                 f.createNewFile(); 
-           } 
-           else {
+            } 
+            else {
                 f.exists();
-            }
+            } 
     }
 
     public void filenotfound() throws FileNotFoundException {
