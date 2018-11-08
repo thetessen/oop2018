@@ -14,7 +14,6 @@ public class Utils {
     public static String readContentFromFile(String path) {
         File file = new File(path);
         try (Scanner sc = new Scanner(file)) {
-            String s;
             while (sc.hasNext()) {
                 System.out.println(sc.nextLine());
             }
@@ -68,7 +67,8 @@ public class Utils {
     public static File findFileByName(String folderPath, String fileName) {
         if(findFile(folderPath,fileName)==0){
             System.out.println("File ko ton tai");
-            return  new File("G:\\notfind");}
+        }
+        else return new File(fileName);
         return  new File("");
     }
     
