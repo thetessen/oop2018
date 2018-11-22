@@ -80,7 +80,8 @@ public class Task1 {
                     }
                 }
                 else check=false;
-                if(check==true) return l;
+                String temp=l;
+                if(check==true&&!l.trim().startsWith("\\\\")) return l;
             }
                 
         }
